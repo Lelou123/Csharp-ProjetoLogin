@@ -1,13 +1,9 @@
 ﻿using ProjetoLogin.DAL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ProjetoLogin.Modelo
 {
-    public class Controle
+    public class Controle // comunicação entre banco de dados e aplicação
     {
         public bool Tem { get; set; }
 
@@ -28,7 +24,7 @@ namespace ProjetoLogin.Modelo
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();
             Mensagem = loginDao.Cadastrar(email, senha, confirmarSenha);
-            if(loginDao.Tem) // mensagem de sucesso no cadastro
+            if(loginDao.Tem) // == true mensagem de sucesso no cadastro
             {
 
             }

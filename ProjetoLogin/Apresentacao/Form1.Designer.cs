@@ -43,7 +43,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(76, 110);
+            this.pictureBox1.Location = new System.Drawing.Point(389, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(122, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -54,7 +54,7 @@
             // btnEntrar
             // 
             this.btnEntrar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(545, 110);
+            this.btnEntrar.Location = new System.Drawing.Point(270, 309);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(88, 36);
             this.btnEntrar.TabIndex = 1;
@@ -65,9 +65,9 @@
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(690, 110);
+            this.btnSair.Location = new System.Drawing.Point(541, 309);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(85, 36);
+            this.btnSair.Size = new System.Drawing.Size(89, 36);
             this.btnSair.TabIndex = 2;
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -77,7 +77,7 @@
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(298, 110);
+            this.lblLogin.Location = new System.Drawing.Point(298, 174);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(60, 22);
             this.lblLogin.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(298, 192);
+            this.lblSenha.Location = new System.Drawing.Point(298, 256);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(60, 22);
             this.lblSenha.TabIndex = 4;
@@ -97,7 +97,7 @@
             // txbSenha
             // 
             this.txbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSenha.Location = new System.Drawing.Point(383, 192);
+            this.txbSenha.Location = new System.Drawing.Point(383, 257);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.PasswordChar = '*';
             this.txbSenha.Size = new System.Drawing.Size(119, 22);
@@ -106,15 +106,15 @@
             // txbLogin
             // 
             this.txbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbLogin.Location = new System.Drawing.Point(383, 110);
+            this.txbLogin.Location = new System.Drawing.Point(383, 174);
             this.txbLogin.Name = "txbLogin";
-            this.txbLogin.Size = new System.Drawing.Size(119, 22);
+            this.txbLogin.Size = new System.Drawing.Size(157, 22);
             this.txbLogin.TabIndex = 6;
             // 
             // btnCadastrese
             // 
             this.btnCadastrese.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrese.Location = new System.Drawing.Point(602, 174);
+            this.btnCadastrese.Location = new System.Drawing.Point(383, 353);
             this.btnCadastrese.Name = "btnCadastrese";
             this.btnCadastrese.Size = new System.Drawing.Size(128, 45);
             this.btnCadastrese.TabIndex = 7;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(876, 461);
             this.Controls.Add(this.btnCadastrese);
             this.Controls.Add(this.txbLogin);
@@ -136,9 +136,9 @@
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

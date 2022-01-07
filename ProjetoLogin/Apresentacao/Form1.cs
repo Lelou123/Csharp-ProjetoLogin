@@ -1,13 +1,6 @@
 ﻿using ProjetoLogin.Apresentacao;
 using ProjetoLogin.Modelo;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetoLogin
@@ -50,6 +43,7 @@ namespace ProjetoLogin
                 {
                     MessageBox.Show("Logado com sucesso: ", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     BemVindo bv = new BemVindo();
+                    this.Hide();
                     bv.Show();
                     
                 }
@@ -62,6 +56,11 @@ namespace ProjetoLogin
             {
                 MessageBox.Show(controle.Mensagem);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

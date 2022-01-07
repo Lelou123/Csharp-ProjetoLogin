@@ -1,12 +1,5 @@
 ﻿using ProjetoLogin.Modelo;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetoLogin.Apresentacao
@@ -30,7 +23,7 @@ namespace ProjetoLogin.Apresentacao
             if(controle.Tem)
             {
                 MessageBox.Show(mensagem, "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                this.Hide();
             }else
             {
                 MessageBox.Show(controle.Mensagem); // mensagem erro 
